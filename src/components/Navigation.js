@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { CartContext } from '../CartContext'
+import { useContext } from 'react';
 const Navigation = () => {
+  const cart = useContext(CartContext)
   return (
     <>
     <nav className='navbar navbar-expand-lg navbar-light bg-white fixed-top' >
@@ -19,17 +22,7 @@ const Navigation = () => {
                 </li>
                 <li className='nav-item'>
                 <Link className='link hover-underline-animation' to={'/cart'}>
-                  <h2 className='nav-link'>Features</h2>
-                  </Link>
-                </li>
-                <li className='nav-item'>
-                <Link  className='link hover-underline-animation'>
-                  <h2 className='nav-link' >Pricing</h2>
-                  </Link>
-                </li>
-                <li className='nav-item'>
-                <Link className='link hover-underline-animation'>
-                  <h2 className='nav-link' >About</h2>
+                  <h2 className='nav-link'>Items ({cart.items.length})</h2>
                   </Link>
                 </li>
               </ul>
