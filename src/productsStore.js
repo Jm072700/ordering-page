@@ -34,28 +34,35 @@ const productsArray = [
         name: 'Galaxy A04s (4GB)',
         price: 9490,
         src: 'https://images.samsung.com/is/image/samsung/assets/ph/mobile/galaxygifts/general-gifting/august-2022/by-price/localized/galaxy-a04s-pc.jpg?$FB_TYPE_J_S_JPG$',
-        text: '',
+        text: 'Maximize your view to the fullest with the newest Galaxy A04s. Get yours today! Discover the latest in electronic & smart appliance technology with Samsung. Flexible Payment Terms. Free Delivery. Exclusive Deals & Bundles. 24/7 Customer Support.',
       },
       {
         id: 6,
         name: 'Galaxy A13',
         price: 10490,
         src: 'https://images.samsung.com/is/image/samsung/assets/ph/mobile/galaxygifts/general-gifting/august-2022/by-price/localized/galaxy-a13-pc.jpg?$FB_TYPE_J_S_JPG$',
-        text: '',
+        text: 'Get the awesome Galaxy A13 at an even more awesome price of ₱10,490. More display means more room to play with the Galaxy A13. Hurry and get yours now! Infinity-O Display. Quad Camera. Super-Fast Charging. Samsung Knox Security.',
       },
       {
         id: 7,
         name: 'Galaxy A23 LTE',
         price: 12990,
         src: 'https://images.samsung.com/is/image/samsung/assets/ph/mobile/galaxygifts/general-gifting/august-2022/by-price/localized/galaxy-a23-lte-pc.jpg?$FB_TYPE_J_S_JPG$',
-        text: '',
+        text: 'Get the Galaxy A23 at an awesome price starting at ₱561/mo for 18 months via HomeCredt. Experience awesome on a simple yet absolute smartphone. Time to get yours today! 24/7 Customer Support. Flexible Payment Terms. Free Delivery. Exclusive Deals & Bundles.',
       },
       {
         id: 8,
         name: 'Galaxy A13 5G',
         price: 14990,
         src: 'https://images.samsung.com/is/image/samsung/assets/ph/mobile/galaxygifts/general-gifting/august-2022/by-price/localized/galaxy-a13-5g-pc.jpg?$FB_TYPE_J_S_JPG$',
-        text: '',
+        text: 'Experience awesome for as low as ₱1,165.80 per month at 0% interest for 12 months. Awesome new phone for awesome you. Time to get the new Galaxy A13 5G now! Trade-in offers available. Trade-in for a new Galaxy.',
+      },
+      {
+        id: 9,
+        name: 'Galaxy A53 5G',
+        price: 23490,
+        src: 'https://images.samsung.com/is/image/samsung/assets/ph/pcd/smartphones/galaxy-a/mx-pcd-galaxy-a53-5g-pc.png?$FB_TYPE_J_S_PNG$',
+        text: 'Get free ITFIT IPX7 waterproof Bluetooth speaker when you buy the new Galaxy A53 5G. Exclusive and awesome deals await when you buy today. Get yours now! Free Delivery. 24/7 Customer Support. Flexible Payment Terms.'
       }
 ]
 

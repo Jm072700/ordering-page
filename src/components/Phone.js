@@ -2,7 +2,6 @@ import {CartContext} from '../CartContext'
 import { useContext } from 'react';
 const Phone = ({phones,handleClick , handleInfo}) => {
   const cart = useContext(CartContext)
-  console.log(cart.items)
   return (
     <div className='d-flex justify-content-around'>
         {phones.map((phone) => ( 

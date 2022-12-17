@@ -101,9 +101,11 @@ const Payment = () => {
             </Link>
             </MDBCol>
             <MDBCol size='6' className="text-end">
+            <Link to={'/feedback'}>
             <button className="btn btn-success">
-              Add card
+              Pay
             </button>
+            </Link>
             </MDBCol>
             
             </MDBRow>

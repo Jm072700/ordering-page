@@ -25,6 +25,11 @@ const Navigation = () => {
                   <h2 className='nav-link'>Items ({cart.items.length})</h2>
                   </Link>
                 </li>
+                <li className='nav-item'>
+                <Link className='link hover-underline-animation' to={'/feedback'}>
+                  <h2 className='nav-link'>Feedback</h2>
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
