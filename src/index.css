@@ -43,3 +43,6 @@ text-decoration-thickness: 5px;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+.link{
+  text-decoration: none;
+}

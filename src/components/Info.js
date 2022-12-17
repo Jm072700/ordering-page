@@ -1,6 +1,5 @@
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import React, { useState } from 'react';
 const Info = ({show,onHide,info}) => {
 
   return (
