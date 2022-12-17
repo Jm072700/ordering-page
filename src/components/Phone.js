@@ -1,5 +1,3 @@
-
-
 const Phone = ({phones , handleClick , handleInfo}) => {
   return (
     <div className='d-flex justify-content-around'>
@@ -9,8 +7,8 @@ const Phone = ({phones , handleClick , handleInfo}) => {
             <div className='card-body'>
               <div className='text-center'>
               <h5 className='card-title'>{phone.name}</h5>
-              <button className='btn btn-light text-center rounded-pill text-black border-dark' >Buy Now</button>
-              <button className='link-dark text-center rounded text-black border-0 hover-underline-animation bg-light p-2' onClick={()=>{handleClick();handleInfo(phone.id);}}>Learn more</button>
+              <button className='btn btn-dark text-center rounded-pill text-light border-dark' >Buy Now</button>
+              <button className='link-dark text-center rounded text-black border-0 hover-underline-animation p-2 btn-primary-outline' style={{backgroundColor:'transparent'}} onClick={()=>{handleClick();handleInfo(phone.id);}}>Learn more</button>
               </div>
             </div>
           </div>

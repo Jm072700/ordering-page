@@ -1,5 +1,4 @@
 import {
-    MDBBtn,
     MDBCard,
     MDBCardBody,
     MDBCardImage,
@@ -53,15 +52,7 @@ const Cart = () => {
                       </MDBTypography>
                     </MDBCol>
                     <MDBCol md="3" lg="3" xl="3" className="d-flex align-items-center">
-                      <MDBBtn color="link" className="px-2">
-                        <MDBIcon fas icon="minus" />
-                      </MDBBtn>
-
                       <MDBInput type="number" min="0" defaultValue={1} size="sm" />
-
-                      <MDBBtn color="link" className="px-2">
-                        <MDBIcon fas icon="plus" />
-                      </MDBBtn>
                     </MDBCol>
                     <MDBCol md="3" lg="2" xl="2" className="text-end">
                       <MDBTypography tag="h6" className="mb-0">
@@ -92,15 +83,11 @@ const Cart = () => {
                       </MDBTypography>
                     </MDBCol>
                     <MDBCol md="3" lg="3" xl="3" className="d-flex align-items-center">
-                      <MDBBtn color="link" className="px-2">
-                        <MDBIcon fas icon="minus" />
-                      </MDBBtn>
+                      
+                     
 
                       <MDBInput type="number" min="0" defaultValue={1} size="sm" />
-
-                      <MDBBtn color="link" className="px-2">
-                        <MDBIcon fas icon="plus" />
-                      </MDBBtn>
+                     
                     </MDBCol>
                     <MDBCol md="3" lg="2" xl="2" className="text-end">
                       <MDBTypography tag="h6" className="mb-0">
@@ -131,15 +118,11 @@ const Cart = () => {
                       </MDBTypography>
                     </MDBCol>
                     <MDBCol md="3" lg="3" xl="3" className="d-flex align-items-center">
-                      <MDBBtn color="link" className="px-2">
-                        <MDBIcon fas icon="minus" />
-                      </MDBBtn>
+                      
+                     
 
                       <MDBInput type="number" min="0" defaultValue={1} size="sm" />
-
-                      <MDBBtn color="link" className="px-2">
-                        <MDBIcon fas icon="plus" />
-                      </MDBBtn>
+                     
                     </MDBCol>
                     <MDBCol md="3" lg="2" xl="2" className="text-end">
                       <MDBTypography tag="h6" className="mb-0">
@@ -157,10 +140,12 @@ const Cart = () => {
 
                   <div className="pt-5">
                     <MDBTypography tag="h6" className="mb-0">
+                        <Link to={'/'}>
                       <MDBCardText tag="a" href="#!" className="text-body">
                         <MDBIcon fas icon="long-arrow-alt-left me-2" /> Back
                         to shop
                       </MDBCardText>
+                      </Link>
                     </MDBTypography>
                   </div>
                 </div>
@@ -198,8 +183,9 @@ const Cart = () => {
                   </MDBTypography>
 
                   <div className="mb-5">
-                    <MDBInput size="lg" label="Enter your code" />
+                    <MDBInput size="lg" />
                   </div>
+
 
                   <hr className="my-4" />
 
@@ -210,9 +196,9 @@ const Cart = () => {
                     <MDBTypography tag="h5">€ 137.00</MDBTypography>
                   </div>
 
-                  <MDBBtn color="dark" block size="lg">
+                  <button className="btn btn-dark rounded-2">
                     CHECKOUT
-                  </MDBBtn>
+                  </button>
                 </div>
               </MDBCol>
             </MDBRow>

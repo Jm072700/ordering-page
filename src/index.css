@@ -46,3 +46,7 @@ text-decoration-thickness: 5px;
 .link{
   text-decoration: none;
 }
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #ccc;
+}

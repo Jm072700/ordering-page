@@ -1,5 +1,4 @@
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 const Info = ({show,onHide,info}) => {
 
   return (
@@ -13,9 +12,9 @@ const Info = ({show,onHide,info}) => {
             <p>{info.text}</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={onHide}>
+          <button className='btn btn-dark text-center rounded-pill text-light border-dark'  onClick={onHide} >
             Close
-          </Button>
+          </button>
         </Modal.Footer>
       </Modal>  
     </>
