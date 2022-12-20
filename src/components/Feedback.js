@@ -1,4 +1,3 @@
-
 import {
   MDBCard,
   MDBCardBody,
@@ -9,29 +8,28 @@ import {
   MDBRadio,
   MDBRow,
   MDBTextArea,
-} from "mdb-react-ui-kit"
-import Footer from './Footer.js'
-import {useState} from 'react'
+} from "mdb-react-ui-kit";
+import Footer from "./Footer.js";
+import { useState } from "react";
 const Feedback = () => {
-  
-  const [feedbacks,setFeedBacks] = useState([])
+  const [feedbacks, setFeedBacks] = useState([]);
 
-  const [rate,setRate] = useState('')
-  const [text,setText] = useState('')
+  const [rate, setRate] = useState("");
+  const [text, setText] = useState("");
   const handleSubmit = (e) => {
-    e.preventDefault()
-    if(text.trim().length > 10 && rate.trim().length > 0){
-      const newFeedback ={
+    e.preventDefault();
+    if (text.trim().length > 10 && rate.trim().length > 0) {
+      const newFeedback = {
         text: text,
         rate: rate,
-      }
-      setFeedBacks([newFeedback,...feedbacks])
-    }else{
-      alert('Text should be greater than 10 chracters')
+      };
+      setFeedBacks([newFeedback, ...feedbacks]);
+    } else {
+      alert("Text should be greater than 10 chracters");
     }
-  }
-  
-  console.log(feedbacks)
+  };
+
+  console.log(feedbacks);
   return (
     <MDBContainer>
       <MDBRow className="justify-content-center">
@@ -61,7 +59,7 @@ const Feedback = () => {
                   label="Very good"
                   value="Very good"
                   className="mb-2"
-                  onChange={(e)=>setRate(e.target.value)}
+                  onChange={(e) => setRate(e.target.value)}
                 />
                 <MDBRadio
                   name="flexRadioDefault"
@@ -69,7 +67,7 @@ const Feedback = () => {
                   label="Good"
                   value="Good"
                   className="mb-2"
-                  onChange={(e)=>setRate(e.target.value)}
+                  onChange={(e) => setRate(e.target.value)}
                 />
                 <MDBRadio
                   name="flexRadioDefault"
@@ -77,7 +75,7 @@ const Feedback = () => {
                   label="Neutral"
                   value="Neutral"
                   className="mb-2"
-                  onChange={(e)=>setRate(e.target.value)}
+                  onChange={(e) => setRate(e.target.value)}
                 />
                 <MDBRadio
                   name="flexRadioDefault"
@@ -85,7 +83,7 @@ const Feedback = () => {
                   label="Bad"
                   value="Bad"
                   className="mb-2"
-                  onChange={(e)=>setRate(e.target.value)}
+                  onChange={(e) => setRate(e.target.value)}
                 />
                 <MDBRadio
                   name="flexRadioDefault"
@@ -93,39 +91,46 @@ const Feedback = () => {
                   label="Very bad"
                   value="Very bad"
                   className="mb-2"
-                  onChange={(e)=>setRate(e.target.value)}
+                  onChange={(e) => setRate(e.target.value)}
                 />
                 <p className="text-center">
                   <strong>What could we improve?</strong>
                 </p>
-                
-                <MDBTextArea className="mb-4" label='Message' id='textAreaExample' rows={4}  onChange={(e)=>setText(e.target.value)}/>
+
+                <MDBTextArea
+                  className="mb-4"
+                  label="Message"
+                  id="textAreaExample"
+                  rows={4}
+                  onChange={(e) => setText(e.target.value)}
+                />
                 <div className="text-end">
-                <button className="btn btn-primary" type="Submit" onClick={handleSubmit}>Submit</button>
+                  <button
+                    className="btn btn-primary"
+                    type="Submit"
+                    onClick={handleSubmit}
+                  >
+                    Submit
+                  </button>
                 </div>
-                </form>
+              </form>
             </MDBCardBody>
           </MDBCard>
           <br></br>
-          {feedbacks.map((feedback,idx) =>(
-      
-          <MDBCard key={idx} className='mt-3'>
-            <MDBCardHeader>
-              {feedback.rate}
-            </MDBCardHeader>
-           <MDBCardBody >
-            <p>{feedback.text}</p>
-           </MDBCardBody>
-          
-          </MDBCard>
+          {feedbacks.map((feedback, idx) => (
+            <MDBCard key={idx} className="mt-3">
+              <MDBCardHeader>{feedback.rate}</MDBCardHeader>
+              <MDBCardBody>
+                <p>{feedback.text}</p>
+              </MDBCardBody>
+            </MDBCard>
           ))}
         </MDBCol>
-        
       </MDBRow>
-      
-      <Footer/>
-    </MDBContainer>
-  )
-}
 
-export default Feedback
+      <Footer />
+    </MDBContainer>
+  );
+};
+
+export default Feedback;
